@@ -16,7 +16,7 @@ def health():
 @app.route('/<path:path>', methods=['GET'])
 def s3_client(path):
     try:
-        return (app_response_text,app_response_code)
+        return (app_response_text,int(app_response_code))
     except Exception as e:
         print(e)
 
