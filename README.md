@@ -11,3 +11,5 @@ RESPONSE_CODE => The HTTP status code to return for every request. Default value
 RESPONSE_TEXT => The response message to be sent
 
 ENABLE_LOGGING => To enable stdout logs for incoming requests. Possible values are {true,false}
+
+APP_PORT => Port on which app has to run. Default: 8000
