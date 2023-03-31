@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 global app_response_code, app_response_text, app_port
 app_response_code = os.environ.get("RESPONSE_CODE",404)
 app_response_text = os.environ.get("RESPONSE_TEXT","Not Found")
-app_port = os.environ.get("APP_PORT","8000")
+app_port = int(os.environ.get("APP_PORT",8000))
 
 #Health Check Path for app
 @app.route('/health')
